@@ -6,7 +6,7 @@
 
 * **Royal Flush**
 
-A straight flush is a hand that contains five cards of sequential rank, all of the same suit, but starting from 10 to Ace, such as A♥ K♥ Q♥ J♥ 10♥ . It ranks first and above four of a kind.
+A straight flush is a hand that contains five cards of sequential rank, all of the same suit, but starting from 10 to Ace, such as A♥ K♥ Q♥ J♥ 10♥ . It ranks first and above four of a kind. 
 
 * **Straight Flush**
 
@@ -117,37 +117,65 @@ High card, also known as no pair or simply nothing, is a hand that does not fall
 
 
 ## README TEST CASES
-test_readme_exists()
-test_readme_contents()
-test_readme_proper_description()
-test_readme_file_for_formatting()
+
+* test_readme_exists(): Checks if the README File exists or not.
+
+* test_readme_contents(): Checks if the README has atleast 300 words.
+
+* test_readme_proper_description(): Checks if the README has relevant keywords in it.
+
+* test_readme_file_for_formatting(): Checks if it has relevant number of '#'
 
 ## FILE TEST CASES
-test_function_name_had_cap_letter()
-test_class_name_had_cap_letter()
+
+* test_function_name_had_cap_letter(): Checks if the Function name was starting with a Capital Letter.
+
+* test_class_name_had_cap_letter(): Checks if the Class name was starting with a Capital Letter.
 
 ## PROGRAM TEST CASES
-test_suit_val_len()
-test_card_deck()
-test_invalid_input()
-test_diff_num_cards()
-test_out_of_range_cards()
-test_diff_cardset()
-test_valid_suits()
-test_full_house()
-test_two_pair()
-test_results()
-test_royal_flush_result()
-test_straight_flush_result()
-test_four_of_a_kind_result()
-test_full_house_result()
-test_flush_result()
-test_straight_result()
-test_three_of_a_kind_result()
-test_two_pair_result()
-test_one_pair_result()
-test_20()
-test_annotations()
-test_docstrings()
+
+* test_suit_val_len(): Checks if suits passed as input are valid.
+
+* test_card_deck(): Checks if the total number of cards is 52.
+
+* test_invalid_input(): Checks if the input passed is of correct type.
+
+* test_diff_num_cards(): Checks whether two inputs passed are of same or different length.
+
+* test_out_of_range_cards(): Checks whether two inputs passed are of valid length(3/4/5).
+
+* test_diff_cardset(): Checks whether two inputs passed are same or not.
+
+* test_valid_suits(): Checks whether suits passed as input are valid or invalid.
+
+* test_full_house(): Checks whether input passed has valid number of cards in this case, it should be 5.
+
+* test_two_pair(): Checks whether input passed has valid number of cards in this case, it should be either be 4/5.
+
+* test_results(): Checks with diff combinations of poker hands and whether result is correct or not.
+
+* test_royal_flush_result(): Checks whether royal flush logic works properly, when relevant input is passed.
+
+* test_straight_flush_result():  Checks whether straight flush logic works properly, when relevant input is passed.
+
+* test_four_of_a_kind_result():  Checks whether four of a kind logic works properly, when relevant input is passed.
+
+* test_full_house_result(): Checks whether full house logic works properly, when relevant input is passed.
+
+* test_flush_result(): Checks whether flush logic works properly, when relevant input is passed.
+
+* test_straight_result(): Checks whether straight logic works properly, when relevant input is passed.
+
+* test_three_of_a_kind_result(): Checks whether three of a kind logic works properly, when relevant input is passed.
+
+* test_two_pair_result(): Checks whether two pair logic works properly, when relevant input is passed.
+
+* test_one_pair_result(): Checks whether one pair logic works properly, when relevant input is passed.
+
+* test_20(): Checks whether the test file has minimum 20 testcases.
+
+* test_annotations(): Checks whether the functions have annotations written while defining.
+
+* test_docstrings(): Checks whether the functions have docstrings written while defining.
 
 
