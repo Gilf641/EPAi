@@ -2,6 +2,8 @@
 
 ![](https://a1s.unicdn.net/polopoly_fs/1.696321.1595491081!/image/1470891313.jpg)
 
+## Rules: 
+
 * **Royal Flush**
 
 A straight flush is a hand that contains five cards of sequential rank, all of the same suit, but starting from 10 to Ace, such as A♥ K♥ Q♥ J♥ 10♥ . It ranks first and above four of a kind.
@@ -43,4 +45,72 @@ One pair, or simply a pair, is a hand that contains two cards of one rank and th
 
 High card, also known as no pair or simply nothing, is a hand that does not fall into any other category, such as K♥ J♥ 8♣ 7♦ 4♠. It ranks below one pair.
 
+
+# Program
+
+## TASK 1: USING ZIP, LAMBDA & MAP
+
+    def card_deck( _list: list, suits: list=['spades', 'clubs', 'hearts', 'diamonds']) -> list:
+        '''
+        This func returns a list of card deck
+            Input: 
+                _list: list of values
+                suits: list of suits
+            Returns:
+                List of Card Deck
+        '''
+        all_suits(suits) 
+        _suits = [s for i in _list for s in suits ]
+        _vals = [v for s in suits for v in _list]
+        return list(zip(_suits, _vals))
+        
+        
+ ## TASK 2: WITHOUT USING ZIP, MAP & LAMBDA
+ 
+     def create_deck(vals: list, suits: list) -> list:
+        '''
+        This function creates a deck of cards without using Zip, Map & Lambda function
+            Input:
+                List of Values and List of Suits
+            Returns:
+                list of card deck
+        '''
+        validate_suits_vals_len(suits, vals)
+        card_deck = []
+        for i in range(52):
+            tup = (vals[i], suits[i])
+            card_deck.append(tup)
+        validate_card_deck(card_deck)
+        return card_deck
+
+
+## TASK 3: POKER WINNER
+      
+    def find_the_winner(cardset1: list, cardset2: list)-> str:
+        '''
+        This Func takes in two set of cards of length 3,4,5 and returns the winning set of cards i.e winner
+            Input: 2 List of cards
+            Returns: String 
+        '''
+
+        validate_same_num_cards(cardset1, cardset2)
+        validate_num_cards_range(cardset1, cardset2)
+        validate_same_cards(cardset1, cardset2)
+
+        poker1, ph1 = Poker(cardset1).poker_hand()
+        poker2, ph2 = Poker(cardset2).poker_hand()
+
+        print(f'poker1: {poker1}, {ph1}')
+        print(f'poker2: {poker2}, {ph2}')
+
+        if poker1 > poker2:
+            return 'Poker1 Wins!'
+        elif poker2 > poker1:
+            return 'Poker2 Wins!'
+        else:
+            return 'Tie b/w Poker1 & Poker2!'
+            
+*Note: Poker() is user-defined class which is in session6.py and poker_hand() is one of its method.
+
+# TEST CASES
 
