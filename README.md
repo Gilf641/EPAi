@@ -110,7 +110,44 @@ High card, also known as no pair or simply nothing, is a hand that does not fall
         else:
             return 'Tie b/w Poker1 & Poker2!'
             
+            
 *Note: Poker() is user-defined class which is in session6.py and poker_hand() is one of its method.
 
 # TEST CASES
+
+
+## README TEST CASES
+test_readme_exists()
+test_readme_contents()
+test_readme_proper_description()
+test_readme_file_for_formatting()
+
+## FILE TEST CASES
+test_function_name_had_cap_letter()
+test_class_name_had_cap_letter()
+
+## PROGRAM TEST CASES
+test_suit_val_len()
+test_card_deck()
+test_invalid_input()
+test_diff_num_cards()
+test_out_of_range_cards()
+test_diff_cardset()
+test_valid_suits()
+test_full_house()
+test_two_pair()
+test_results()
+test_royal_flush_result()
+test_straight_flush_result()
+test_four_of_a_kind_result()
+test_full_house_result()
+test_flush_result()
+test_straight_result()
+test_three_of_a_kind_result()
+test_two_pair_result()
+test_one_pair_result()
+test_20()
+test_annotations()
+test_docstrings()
+
 
