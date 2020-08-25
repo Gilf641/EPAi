@@ -1,8 +1,10 @@
 Poker Hands
 
+![](https://a1s.unicdn.net/polopoly_fs/1.696321.1595491081!/image/1470891313.jpg)
+
 * **Royal Flush**
 
-A straight flush is a hand that contains five cards of sequential rank, all of the same suit, but starting from 10 to Ace . It ranks first and above four of a kind.
+A straight flush is a hand that contains five cards of sequential rank, all of the same suit, but starting from 10 to Ace, such as A♥ K♥ Q♥ J♥ 10♥ . It ranks first and above four of a kind.
 
 * **Straight Flush**
 
